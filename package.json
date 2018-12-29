@@ -22,5 +22,8 @@
   "bugs": {
     "url": "https://github.com/jdsteinbach/jdsteinbach-card/issues"
   },
-  "homepage": "https://github.com/jdsteinbach/jdsteinbach-card#readme"
+  "homepage": "https://github.com/jdsteinbach/jdsteinbach-card#readme",
+  "dependencies": {
+    "chalk": "^2.4.1"
+  }
 }
