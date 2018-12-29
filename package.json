@@ -1,8 +1,11 @@
 {
   "name": "jdsteinbach",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "My business card for the terminal",
   "main": "index.js",
+  "bin": {
+    "jdsteinbach": "index.js"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
