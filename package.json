@@ -1,0 +1,26 @@
+{
+  "name": "jdsteinbach-card",
+  "version": "1.0.0",
+  "description": "My business card for the terminal",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jdsteinbach/jdsteinbach-card.git"
+  },
+  "keywords": [
+    "James",
+    "Steinbach",
+    "business",
+    "card",
+    "jdsteinbach"
+  ],
+  "author": "James Steinbach",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/jdsteinbach/jdsteinbach-card/issues"
+  },
+  "homepage": "https://github.com/jdsteinbach/jdsteinbach-card#readme"
+}
