@@ -4,19 +4,19 @@ const chalk = require('chalk')
 
 // Faceshot art
 const face = [
-'   /////////',
-'  /ʗ/---▭-▭ ',
-'  \\\\\\     ᔨ ',
-'   \\\\\\\\/╰─╯|',
-'  /  \\\\\\/// ',
-' /  \\    \\  ',
+  '   /////////',
+  '  /ʗ/---▭-▭ ',
+  '  \\\\\\     ᔨ ',
+  '   \\\\\\\\/╰─╯|',
+  '  /  \\\\\\/// ',
+  ' /  \\    \\  '
 ]
 
 // Text Strings
 const text = [
   {
     style: 'title',
-    text: 'James Steinbach',
+    text: 'James Steinbach'
   },
   {
     style: 'title',
@@ -24,20 +24,20 @@ const text = [
   },
   {
     style: 'link',
-    text: 'https://jamessteinbach.com',
+    text: 'https://jamessteinbach.com'
   },
   {
     style: 'link',
-    text: 'https://github.com/jdsteinbach',
+    text: 'https://github.com/jdsteinbach'
   },
   {
     style: 'link',
-    text: 'https://twitter.com/jdsteinbach',
+    text: 'https://twitter.com/jdsteinbach'
   },
   {
     style: 'link',
-    text: 'https://linkedin.com/jdsteinbach',
-  },
+    text: 'https://linkedin.com/jdsteinbach'
+  }
 ]
 
 // Styles
@@ -57,4 +57,3 @@ console.log(chalk.bgHex('#263238')([
   `${s.border('  ')}${' '.repeat(56)}${s.border('  ')}`,
   s.border(' ').repeat(60)
 ].join('\n')))
-
