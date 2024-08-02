@@ -1,15 +1,18 @@
 #!/usr/bin/env node
 
-const chalk = require('chalk')
+import chalk from 'chalk'
+import colors from './getNordColors.js'
 
 // Faceshot art
 const face = [
+  '',
   '   /////////',
   '  /ʗ/---▭-▭ ',
   '  \\\\\\     ᔨ ',
   '   \\\\\\\\/╰─╯|',
   '  /  \\\\\\/// ',
-  ' /  \\    \\  '
+  ' /  \\    \\  ',
+  ''
 ]
 
 // Text Strings
@@ -19,8 +22,20 @@ const text = [
     text: 'James Steinbach'
   },
   {
-    style: 'title',
-    text: 'Senior Front-End Architect'
+    style: 'text',
+    text: 'Senior Software Engineer'
+  },
+  {
+    style: 'text',
+    text: 'Front-End Architect'
+  },
+  {
+    style: 'text',
+    text: ''
+  },
+  {
+    style: 'link',
+    text: 'https://jdsteinbach.com'
   },
   {
     style: 'link',
@@ -32,28 +47,27 @@ const text = [
   },
   {
     style: 'link',
-    text: 'https://twitter.com/jdsteinbach'
-  },
-  {
-    style: 'link',
-    text: 'https://linkedin.com/jdsteinbach'
+    text: 'https://linkedin.com/in/jdsteinbach'
   }
 ]
 
 // Styles
 const s = {
-  link: str => chalk.hex('#5C6BC0')(str),
-  title: str => chalk.bold.hex('#5C6BC0')(str),
-  border: str => chalk.bgHex('#546E7A')(str),
-  face: str => chalk.hex('#FB8C00')(str)
+  link: str => chalk.hex(colors.nord15)(str),
+  title: str => chalk.bold.hex(colors.nord8)(str),
+  text: str => chalk.hex(colors.nord2)(str),
+  border: str => chalk.bgHex(colors.nord1)(str),
+  face: str => chalk.hex(colors.nord12)(str)
 }
 
-console.log(chalk.bgHex('#263238')([
+console.log(chalk.bgHex(colors.nord0)([
+  '',
   s.border(' ').repeat(60),
   `${s.border('  ')}${' '.repeat(56)}${s.border('  ')}`,
   text
     .map((t, i) => `${s.border('  ')}  ${s.face(face[i]) || ' '.repeat(12)}${' '.repeat(39 - t.text.length)}${s[t.style](t.text)}   ${s.border('  ')}`)
     .join('\n'),
   `${s.border('  ')}${' '.repeat(56)}${s.border('  ')}`,
-  s.border(' ').repeat(60)
+  s.border(' ').repeat(60),
+  ''
 ].join('\n')))
