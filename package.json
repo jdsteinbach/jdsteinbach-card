@@ -1,6 +1,6 @@
 {
   "name": "jdsteinbach",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "My business card for the terminal",
   "main": "index.js",
   "bin": {
