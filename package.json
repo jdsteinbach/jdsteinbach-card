@@ -1,6 +1,6 @@
 {
   "name": "jdsteinbach",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "My business card for the terminal",
   "main": "index.js",
   "bin": {
@@ -26,7 +26,7 @@
     "url": "https://github.com/jdsteinbach/jdsteinbach-card/issues"
   },
   "homepage": "https://github.com/jdsteinbach/jdsteinbach-card#readme",
-  "devDependencies": {
+  "dependencies": {
     "chalk": "^5.3.0",
     "nord": "^0.2.1"
   },
