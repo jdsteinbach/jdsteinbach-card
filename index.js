@@ -55,7 +55,7 @@ const text = [
 const s = {
   link: str => chalk.hex(colors.nord15)(str),
   title: str => chalk.bold.hex(colors.nord8)(str),
-  text: str => chalk.hex(colors.nord2)(str),
+  text: str => chalk.hex(colors.nord9)(str),
   border: str => chalk.bgHex(colors.nord1)(str),
   face: str => chalk.hex(colors.nord12)(str)
 }
