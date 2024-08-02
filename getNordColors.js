@@ -1,5 +1,5 @@
 import { readFileSync } from 'node:fs'
-const nordSass = readFileSync('./node_modules/nord/src/sass/nord.scss', 'utf8')
+const nordSass = readFileSync(`${process.cwd()}/node_modules/nord/src/sass/nord.scss`, 'utf8')
 
 const colorVariables = nordSass.matchAll(/\$(nord\d+)\:\s+?(\#[a-z0-9]{6};)/gim)
 
